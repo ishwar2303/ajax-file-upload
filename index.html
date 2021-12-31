@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <script src="https://kit.fontawesome.com/196c90f518.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Upload file using AJAX call.</h2>
+        <form id="form" enctype="multipart/form-data">
+            <input id="file-name" type="text" name="fileName" placeholder="Name your file" />
+
+            <div id="file-upload-box">
+                <input id="file" type="file" name="uploadedFile" />
+                <div id="upload-icon">
+                    <i class="fas fa-file-upload"></i>
+                </div>
+                <h3>Upload File</h3>
+                <div id="selected-file"></div>
+                <div id="upload-error"></div>
+            </div>
+            <div class="button-container">
+                <div id="remove-selected-file">Remove File</div>
+                <input id="submit-form" type="submit" value="Submit" />
+            </div>
+        </form>
+    
+        <pre id="response"></pre>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
